@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Batch 2 Day 3-4 Assignment 2 - Question 4</title>
+</head>
+<body>
+		
+		<h1>Function to display on Console all the objects having age less than 30</h1>
+		<br />
+		<h1>Function to display on Console all the objects having country India</h1>
+	
+<script type="text/javascript">
+	//Program to Following the 3rd question
+
+	let personal_informations = [
+{name :"Mukesh", age : 20, country :"India", hobbies:("gardening","meditation","painting")},
+{name :"Gautam", age : 40, country :"India", hobbies:("painting","meditation","swimming")},
+{name :"Uday", age : 35, country :"India", hobbies:("swimming","meditation","gardening")},
+{name :"James", age : 15, country :"United States", hobbies:("cooking","meditation","painting")},
+  ]
+
+	// Function to display on Console all the objects having age less than 30
+  function display_age_information(){
+	  personal_informations.forEach(function (element){
+		  if (element.age<30)
+		  {console.log(element);}
+	  });
+  }
+  display_age_information();
+
+  
+
+
+  
+
+//   Function to display on Console all the objects having country India
+
+function display_country_India(){
+	personal_informations.forEach(function (ele){
+		if(ele.country=="India"){
+			console.log(ele);
+		}
+	});
+}
+display_country_India();
+
+  
+</script>	
+</body>
+</html>
